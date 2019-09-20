@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+# pass-stdout - Password Store Extension (https://www.passwordstore.org/)
+# Copyright (c) 2019 Michał Krzysztof Feiler
+# License: MIT
+
 VERSION="0.2.1"
 
 #local opts
