@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-VERSION="0.1.1"
+VERSION="0.2.1"
 
 #local opts
 opts="$($GETOPT -o n:k: -n "$PROGRAM" -- "$@")"
@@ -28,7 +28,7 @@ check_sneaky_paths "$path"
 
 $GPG -d "${GPG_OPTS[@]}" "$passfile" |
 	if [[ -z $k ]]; then cat
-	else sed '/^(?!'"$k"').*$/d' |
+	else sed '/^(?!'"$k"':).*$/d' |
 		sed 's/^'"$k"':[^[:graph:]]*(.*?)$/\1/'; fi |
 	sed -n "${n}p"
 exit 0
