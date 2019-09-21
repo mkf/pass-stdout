@@ -3,7 +3,7 @@
 # Copyright (c) 2019 Michał Krzysztof Feiler
 # License: MIT
 
-VERSION="0.2.1"
+VERSION="0.2.2"
 
 opts="$($GETOPT -o n:k: -n "$PROGRAM" -- "$@")"
 err=$?
